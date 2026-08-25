@@ -1,5 +1,4 @@
 # Project folders - don't commit yet
-/backend/
 /ml/
 
 # PDF files
@@ -19,11 +18,25 @@ lerna-debug.log*
 **/dist/
 **/dist-ssr/
 
+# Pyhton
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.venv/
+**/venv/
 
 # Build
 *.local
+
+# Environment variables
 .env.*
 .env
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
 
 # Editor directories and files
 .vscode/*
